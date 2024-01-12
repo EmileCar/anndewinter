@@ -1,13 +1,81 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/*   INDEX CSS: Algemene styling voor hele site (vooral variabelen en declaraties van fonts)   */
+
+@font-face {
+  font-family: DancingScript;
+  font-weight: normal;
+  src: url('assets/fonts/DancingScript-SemiBold.ttf');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* @font-face {
+  font-family: Rubik;
+  font-weight: bold;
+  src: url('assets/fonts/Rubik-Bold.ttf');
+}
+
+@font-face {
+  font-family: PassionOne;
+  font-weight: normal;
+  src: url('assets/fonts/PassionOne.ttf');
+} */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --s-99: .1rem;
+  --s-2: .2rem;
+  --s-1: .5rem;
+  --s0: 1rem;
+  --s1: 1.5rem;
+  --s2: 2rem;
+  --s3: 3rem;
+
+  --site-min-width: 70rem;
+  --space-between-section: 6.8rem;
+  --background-color: #ececec;
+  --black-color: #181818;
+  --color-light-blue: rgb(2, 129, 172);
+  --color-error: rgb(163, 0, 0);
+  --title-font: 'Oswald', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#root {
+  line-height: 1.2;
+  font-size: 1.2rem;
+  font-family: 'Gothic_A1', sans-serif;
+  background-color: white;
+  color: var(--brown-color);
+}
+
+/*   GENERAL STYLING   */
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.hidden {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.preload {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
 }
