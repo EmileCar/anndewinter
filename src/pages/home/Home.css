@@ -1,0 +1,129 @@
+.home__page {
+    margin-top: 5rem;
+}
+
+.quote {
+    font-family: 'DancingScript';
+    font-size: 2.2rem;
+}
+
+.quote__section {
+    text-align: center;
+    padding: 7rem;
+}
+
+.quote__einstein {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.video__section {
+    height: 20rem;
+    display: grid;
+    place-items: center;
+    background-image: url(../../assets/images/pages/home/croquettes.jpg);
+    background-position: 0rem -7rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.aboutme__section{
+    padding: 6rem 1rem;
+}
+
+.aboutme__section--title {
+    font-family: 'Oswald';
+}
+
+.aboutme__section--text {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.aboutme__section .textLink{
+    margin-left: 0.5rem;
+}
+
+@media screen and (min-width: 55rem) {
+    .home__page {
+        margin-top: 0;
+    }
+}
+
+.concepten__section--wrapper{
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+}
+
+.concept__container{
+    width: 25rem;
+    height: 15rem;
+    background-color: black;
+}
+
+.concept__container:hover {
+    cursor: pointer;
+}
+
+.concept__container:hover .concept__container--cover {
+    background-color: rgb(0, 0, 0, 0.1);
+}
+
+.concept__container:hover .concept-title {
+    transform: scale(1.2);
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+.concept__container--cover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    transition: background-color 0.5s ease-in-out;
+    color: white;
+}
+
+.concept__container--cover .concept-title{
+    font-family: 'Oswald';
+    font-size: 2rem;
+    text-align: center;
+    padding: 0.5rem;
+    background-color: rgb(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px var(--black-color);
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+.concept-concert{
+    background-image: url(../../assets/images/pages/home/concepten/concert2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.concept-feest {
+    background-image: url(../../assets/images/pages/home/concepten/feest1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.concept-uitvaart {
+    background-image: url(../../assets/images/pages/home/concepten/ceremonie2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.concept-huwelijk {
+    background-image: url(../../assets/images/pages/home/concepten/ceremonie1.jpg);
+    background-position: 80% 60%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}   

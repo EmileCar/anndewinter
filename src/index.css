@@ -6,17 +6,17 @@
   src: url('assets/fonts/DancingScript-SemiBold.ttf');
 }
 
-/* @font-face {
-  font-family: Rubik;
-  font-weight: bold;
-  src: url('assets/fonts/Rubik-Bold.ttf');
+@font-face {
+  font-family: GothicA1;
+  font-weight: normal;
+  src: url('assets/fonts/GothicA1-Medium.ttf');
 }
 
 @font-face {
-  font-family: PassionOne;
+  font-family: Oswald;
   font-weight: normal;
-  src: url('assets/fonts/PassionOne.ttf');
-} */
+  src: url('assets/fonts/Oswald-Medium.ttf');
+}
 
 *,
 *::before,
@@ -40,7 +40,6 @@ html {
   --s3: 3rem;
 
   --site-min-width: 70rem;
-  --space-between-section: 6.8rem;
   --background-color: #ececec;
   --black-color: #181818;
   --color-light-blue: rgb(2, 129, 172);
@@ -50,14 +49,15 @@ html {
 
 #root {
   line-height: 1.2;
-  font-size: 1.2rem;
-  font-family: 'Gothic_A1', sans-serif;
+  font-size: 1.35rem;
+  font-family: 'GothicA1', sans-serif;
   background-color: var(--background-color);
   color: var(--black-color);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 /*   GENERAL STYLING   */
@@ -69,6 +69,10 @@ a {
 
 strong {
   font-weight: bold;
+}
+
+.elevation{
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
 }
 
 .hidden {

@@ -18,12 +18,11 @@ const Header = ({ title }) => {
   };
 
   return (
-    <header className="header">
+    <header className="header elevation">
       <div className={`header__content ${isNavOpen ? 'preload open' : 'preload'}`}>
         <Link to="/" className="header__logo--container layered-grid">
-          <img className="header__logo" src={logo} alt="Logo" />
-          <h1>Ksa Oosterzele</h1>
-          {title && title === 'ADMIN' && <h2 className="admin-mark">Adminmodus</h2>}
+          <img className="header__logo" src={logo} alt="Annchanté Logo" />
+          <h1 className="header__title">Annchanté</h1>
         </Link>
         <input type="checkbox" id="nav-toggle" className="nav-toggle" />
         <nav className={`navbar ${isNavOpen ? 'navOpen' : ''}`}>
@@ -34,8 +33,8 @@ const Header = ({ title }) => {
               </Link>
             </li>
             <li className="menu__item">
-              <Link className="item__link" to="/activiteiten">
-                Activiteiten
+              <Link className="item__link" to="/bio">
+                Bio
               </Link>
             </li>
             <li className="menu__item">
@@ -44,8 +43,13 @@ const Header = ({ title }) => {
               </Link>
             </li>
             <li className="menu__item">
-              <Link className="item__link" to="/inschrijven">
-                Inschrijven
+              <Link className="item__link" to="/annchante">
+                Annchanté
+              </Link>
+            </li>
+            <li className="menu__item">
+              <Link className="item__link" to="/donna">
+                Donna²
               </Link>
             </li>
             <li className="menu__item">
