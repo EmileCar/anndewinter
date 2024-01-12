@@ -1,9 +1,10 @@
 .footer {
-	background-color: var(--main-color);
+	background-color: black;
 	padding: var(--s1);
-	display: grid;
-	place-items: center;
 	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .footer__wrapper {

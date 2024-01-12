@@ -27,6 +27,7 @@
 html {
   box-sizing: inherit;
   scroll-behavior: smooth;
+  min-height: 100%;
 }
 
 :root {
@@ -51,8 +52,12 @@ html {
   line-height: 1.2;
   font-size: 1.2rem;
   font-family: 'Gothic_A1', sans-serif;
-  background-color: white;
-  color: var(--brown-color);
+  background-color: var(--background-color);
+  color: var(--black-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /*   GENERAL STYLING   */

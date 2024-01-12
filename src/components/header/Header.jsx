@@ -4,9 +4,7 @@ import logo from '../../assets/images/logo.png'
 import { useState, useEffect } from "react";
 import { Link, useLocation } from 'react-router-dom';
 
-
-
-function Header({ title }) {
+const Header = ({ title }) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const location = useLocation();
 
