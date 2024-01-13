@@ -6,7 +6,7 @@ import facebookIcon from '../../assets/images/icons/facebookIcon.svg'
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer elevation-strong">
       <div className="footer__wrapper">
         <div className="footer__wrapper--socials">
           <div className='footer__logo--container'>

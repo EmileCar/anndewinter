@@ -1,0 +1,40 @@
+.aboutme__section--wrapper {
+    padding-top: 3rem;
+    display: grid;
+    grid-template-areas:
+        "image-left al1 al1"
+        "al2 al2 image-right";
+    align-items: center;
+    gap: var(--s0);
+}
+
+.aboutme__section--wrapper p {
+    margin-bottom: 0.7rem;
+}
+
+.aboutme__section--wrapper p:last-child {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .aboutme__section--wrapper {
+        grid-template-areas:
+            "al1"
+            "image-left"
+            "al2"
+            "image-right";
+        text-align: center;
+    }
+
+    .aboutme__section--wrapper img {
+        margin: 1rem auto !important;
+    }
+}
+
+.pastproductions__section{
+    padding-top: 0;
+}
+
+.dl-productions {
+    margin: var(--s2) 0;
+}

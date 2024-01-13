@@ -72,3 +72,27 @@
         transform: translate(50%, -50%);
     }
 }
+
+/* Small Hero Section */
+.hero__section-small{
+    height: 55vh;
+    position: relative;
+}
+
+.hero__section-small--img{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 960px) {
+    .hero__section-small {
+        height: 50vh;
+    }
+}
+
+.hero__section-small--img.bio{
+    background-image: url('../../assets/images/pages/bio/ADW_performing_bar.jpg');
+}

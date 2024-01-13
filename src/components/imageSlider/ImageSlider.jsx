@@ -17,7 +17,7 @@ const ImageSlider = () => {
     }, [activeImage]);
 
     return (
-        <section className="image-slider__section">
+        <section className="image-slider__section elevation-strong">
             <h2 className="hidden">Afbeeldingen</h2>
             <div className="slide-images">
                 <img src={image1} className={"slide-image " + (activeImage === 0 ? "imageSlider-active" : "")} />

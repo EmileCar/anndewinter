@@ -49,7 +49,7 @@ html {
 
 #root {
   line-height: 1.2;
-  font-size: 1.35rem;
+  font-size: 1.2rem;
   font-family: 'GothicA1', sans-serif;
   background-color: var(--background-color);
   color: var(--black-color);
@@ -73,6 +73,10 @@ strong {
 
 .elevation{
   box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+}
+
+.elevation-strong{
+ box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.5)
 }
 
 .hidden {

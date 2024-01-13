@@ -10,7 +10,7 @@ import Begeleiding from '../../components/begeleiding/Begeleiding';
 
 const Home = () => {
     return (
-        <div className='home__page'>
+        <div className='page'>
             <Hero>
                 <h1 className='hero__title'>Ann De Winter</h1>
                 <p className='hero__subtitle'>Stijlvolle live zangeres</p>
