@@ -1,0 +1,10 @@
+.video__section {
+    height: 20rem;
+    display: grid;
+    place-items: center;
+    background-image: url(../../assets/images/pages/home/croquettes.jpg);
+    background-position: 0rem -7rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+}

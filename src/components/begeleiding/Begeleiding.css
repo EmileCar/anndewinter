@@ -1,0 +1,16 @@
+.begeleiding__container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s2);
+}
+
+.begeleiding__item {
+    text-align: left;
+    align-self: flex-start;
+}
+
+.begeleiding__item h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
