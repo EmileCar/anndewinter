@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import HeroBasic from '../../components/hero/HeroBasic';
 import image1 from '../../assets/images/pages/bio/foto3.jpg';
 import image2 from '../../assets/images/pages/bio/adw-rood-kleed.jpg';
@@ -6,7 +6,34 @@ import './Bio.css';
 
 const Bio = () => {
     const [productions, setProductions] = useState([]);
+    const [uniqueYears, setUniqueYears] = useState([]);
     const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        fetchProductions();
+    }, []);
+
+    const fetchProductions = async () => {
+        try{
+            const response = await fetch('https://www.anndewinter.be/API/?page=getPastActivities',
+                {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                }
+            );
+            const data = await response.json();
+            setUniqueYears([...new Set(data.map((item) => item.year))]);
+            setProductions(data);
+        } catch (error) {
+            setProductions(["Er is een probleem met de server"]);
+            console.log(error);
+        } finally {
+            setLoading(false);
+        }
+        
+    }
 
     return (
         <div className='page'>
@@ -36,7 +63,20 @@ const Bio = () => {
                 <h2 className="aboutme__section--title section__title">Musical en operetteproducties</h2>
                 <div class="section__title--border"></div>
                 <div className="dl-productions">
-                    { loading ? <p>Aan het laden</p> : null}
+                    { loading ? <p>Aan het laden</p> : 
+                        uniqueYears.map((year) => (
+                            <div key={year} className="dl-item">
+                                <dt className="dl-year">{year}</dt>
+                                {productions
+                                    .filter((item) => item.year === year)
+                                    .map((item) => (
+                                        <dd key={item.id} className="dl-desc">
+                                            {`${item.name} (${item.year}), ${item.description}`}
+                                        </dd>
+                                    ))}
+                            </div>
+                        ))
+                    }
                 </div>
             </div>
         </div>

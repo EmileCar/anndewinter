@@ -38,3 +38,22 @@
 .dl-productions {
     margin: var(--s2) 0;
 }
+
+.dl-item {
+    display: grid;
+    justify-content: start;
+    gap: var(--s0);
+    margin: var(--s0) 0;
+}
+
+.dl-year {
+    grid-row: 1;
+    grid-column: 1;
+    font-weight: bold;
+}
+
+.dl-desc {
+    grid-column: 2;
+    font-size: 0.85rem;
+    align-self: center;
+}
