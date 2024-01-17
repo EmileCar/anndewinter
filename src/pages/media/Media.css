@@ -1,0 +1,230 @@
+.media__container {
+    margin-top: var(--s1);
+    width: 100%;
+}
+
+.panel-media {
+    padding: var(--s0) 0rem;
+    line-height: 0;
+}
+
+.column-count {
+    column-count: 4;
+}
+
+.foto__item {
+    height: auto;
+    break-inside: avoid-column;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 1.2rem;
+    position: relative;
+    color: white;
+    cursor: pointer;
+}
+
+.foto__item img {
+    width: 100%;
+    z-index: 50;
+    transition: filter 1s ease-in-out;
+    --webkit-transition: filter 1s ease-in-out;
+}
+
+.foto__item--textWrapper {
+    background-color: rgb(15, 15, 15, 0.6);
+    width: 100%;
+    position: absolute;
+    transition: bottom 1s ease-in-out;
+    bottom: -100%;
+    opacity: 1;
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+    white-space: nowrap;
+}
+
+.foto__item--textWrapper p {
+    white-space: nowrap;
+    overflow: hidden;
+    height: 1.2rem;
+    line-height: 1;
+    text-overflow: ellipsis;
+    width: 90%;
+}
+
+.foto__item:hover img {
+    filter: brightness(60%);
+}
+
+.foto__item:hover .foto__item--textWrapper {
+    bottom: 0;
+}
+
+
+
+.video__item {
+    height: auto;
+    break-inside: avoid-column;
+    overflow: hidden;
+    margin-bottom: 1.2rem;
+    cursor: pointer;
+}
+
+.video-player {
+    display: grid;
+    place-items: center;
+}
+
+.video__item img {
+    grid-row: 1;
+    grid-column: 1;
+    width: 100%;
+    transition: filter 1s ease-in-out;
+    --webkit-transition: filter 1s ease-in-out;
+    border-radius: 10px;
+}
+
+.video__item--playbutton {
+    background-image: url(../../assets/images/icons/playbutton.svg);
+    height: 4rem;
+    width: 4rem;
+    opacity: 50%;
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 100;
+    transition: opacity 1s ease-in-out;
+}
+
+.video__item p {
+    padding: var(--s-2);
+    font-size: 1rem;
+}
+
+.video__item:hover img {
+    filter: brightness(60%);
+}
+
+.video__item:hover .video__item--playbutton {
+    opacity: 1;
+}
+
+
+.item__detail--overlap {
+    background-color: rgb(250, 246, 246, 0.94);
+    height: 102vh;
+    width: 102vw;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: none;
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    padding: var(--s1);
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+.closebutton {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    opacity: 0.8;
+    cursor: pointer;
+    z-index: 150;
+}
+
+.closeArea {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 50;
+}
+
+.overlap--visible {
+    display: grid;
+    visibility: visible;
+    pointer-events: initial;
+}
+
+.overlap__content img {
+    max-width: 80vw;
+    max-height: 68vh;
+    box-shadow: 0px 0px 30px black;
+}
+
+.iframe-media__container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-height: 40rem;
+    max-width: 45rem;
+    min-width: 70vw;
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.overlap__content {
+    z-index: 100;
+}
+
+.overlap__content iframe {
+    box-shadow: 0px 0px 30px black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.overlap__content--title {
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: var(--s1);
+}
+
+.body-disable-overflow {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+
+.audio-type {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s0);
+    margin: 2rem 0;
+}
+
+.audios {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s0);
+}
+
+.audio-type__title {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.audio__item {
+    background-color: lightgrey;
+    padding: var(--s0);
+    border-radius: var(--s1);
+}
+
+.audio__item p {
+    font-weight: bold;
+}
+
+.audio__item audio {
+    width: 100%;
+    margin-top: var(--s0);
+    border-radius: none;
+}

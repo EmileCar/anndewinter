@@ -39,7 +39,7 @@ const Bio = () => {
         <div className='page'>
             <HeroBasic page="bio"/>
             <div className='section-general'>
-                <h2 className="aboutme__section--title section__title">Bio</h2>
+                <h2 className="section__title">Bio</h2>
                 <div class="section__title--border"></div>
                 <div className="aboutme__section--wrapper">
                     <img src={image1} height="300" style={{ gridArea: 'image-left', marginRight: '2rem', marginBottom: '1rem' }} className='elevation' />
@@ -60,7 +60,7 @@ const Bio = () => {
                 </div>
             </div>
             <div className='section-general pastproductions__section'>
-                <h2 className="aboutme__section--title section__title">Musical en operetteproducties</h2>
+                <h2 className="section__title">Musical en operetteproducties</h2>
                 <div class="section__title--border"></div>
                 <div className="dl-productions">
                     { loading ? <p>Aan het laden</p> : 
