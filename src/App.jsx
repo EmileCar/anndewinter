@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from './pages/home/Home';
 import Bio from './pages/bio/Bio';
 import Media from './pages/media/Media';
+import Annchante from './pages/annchante/Annchante';
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/bio" element={<Bio />} />
           <Route exact path="/media" element={<Media />} />
-        </Routes>
+          <Route exact path="/annchante" element={<Annchante />}/></Routes>
       </main>
       <Footer />
     </Router>
