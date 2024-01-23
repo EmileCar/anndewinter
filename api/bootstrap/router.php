@@ -9,6 +9,18 @@ $routes = array(
         'controller' => 'PastActivities',
         'action' => 'index'
     ),
+    'getPhotos' => array(
+        'controller' => 'Media',
+        'action' => 'getFotos'
+    ),
+    'getVideos' => array(
+        'controller' => 'Media',
+        'action' => 'getVideos'
+    ),
+    'getAudios' => array(
+        'controller' => 'Media',
+        'action' => 'getAudios'
+    ),
 );
 
 if (empty($_GET['page'])) {

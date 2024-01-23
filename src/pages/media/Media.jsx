@@ -1,8 +1,30 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Media.css';
 import Tabs from '../../components/tabs/Tabs';
+import MediaPanelFoto from '../../components/mediaPanel/MediaPanelFoto';
+import MediaPanelVideo from '../../components/mediaPanel/MediaPanelVideo';
+import MediaPanelAudio from '../../components/mediaPanel/MediaPanelAudio';
 
 const Media = () => {
+    const mediaTypes = ["foto", "video", "audio"];
+    const [selectedMediaType, setSelectedMediaType] = useState(mediaTypes[0]);
+    const [mediaItems, setMediaItems] = useState([]);
+
+    const renderMediaPanel = () => {
+        if(selectedMediaType === "foto") {
+            return <MediaPanelFoto/>
+        } else if(selectedMediaType === "video") {
+            return <MediaPanelVideo/>
+        } else if(selectedMediaType === "audio") {
+            return <MediaPanelAudio/>
+        } else {
+            return <div>Geen media gevonden</div>
+        }
+    }
+
+    useEffect(() => {
+        console.log(selectedMediaType)
+    } , [selectedMediaType]);
 
 
     return (
@@ -11,17 +33,9 @@ const Media = () => {
                 <h2 className="section__title">Media</h2>
                 <div className="section__title--border"></div>
                 <div className="media__container">
-                    <Tabs options={["foto", "video", "audio"]}/>
+                    <Tabs options={mediaTypes} setOption={setSelectedMediaType} currentOption={selectedMediaType}/>
                     <div className="panels">
-                        <div className="panel panel-media column-count" id="foto-panel">
-                            {/* PHP code here */}
-                        </div>
-                        <div className="panel panel-media column-count" id="video-panel">
-                            {/* PHP code here */}
-                        </div>
-                        <div className="panel panel-media" id="audio-panel">
-                            {/* PHP code here */}
-                        </div>
+                        {renderMediaPanel()}
                     </div>
                 </div>
             </div>

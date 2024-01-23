@@ -5,6 +5,7 @@
 	transition: opacity 0.5s ease-in-out;
 	border-bottom: solid 1px grey;
 	background-color: white;
+	align-self: start;
 }
 
 .header__content {
@@ -117,12 +118,7 @@
 	position: absolute !important;
 	top: -100% !important;
 }
-/* .nav-toggle:checked ~ .navbar{
-	transform: scale(1, 1);
-} */
-.nav-toggle:checked ~ .toggle-button{
-	/* transform: rotate(90deg); */
-}
+
 @media screen and (min-width: 55rem){
 	.header{
 		position: relative;

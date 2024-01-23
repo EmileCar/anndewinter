@@ -3,6 +3,22 @@
     width: 100%;
 }
 
+.panel{
+	animation: fadein .8s;
+	text-align: center;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
 .panel-media {
     padding: var(--s0) 0rem;
     line-height: 0;

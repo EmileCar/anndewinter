@@ -22,93 +22,17 @@
 
 .tab:hover {
     background-color: rgb(231, 231, 231);
-}
-.tabs {
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.tab {
-    width: 100%;
-    cursor: pointer;
-    padding: var(--s0);
-    transition: color 0.1s ease-in-out, font-weight 0.1s ease-in-out, font-size 0.1s ease-in-out;
-    color: gray;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: normal;
-    min-height: 100%;
-}
-
-.tab:hover {
-    background-color: rgb(231, 231, 231);
-}
-
-.panel {
-    display: none;
-    animation: fadein .8s;
-    text-align: center;
-}
-
-@keyframes fadein {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
+    color: black;
 }
 
 .tabs--barBelow {
     height: var(--s-2);
     background-color: black;
-    width: calc(100% / 4);
     transition: transform 0.2s ease-in-out;
     display: none;
 }
 
-.barBelow-media {
-    width: calc(100% / 3);
-}
-
-.conceptenPanel__images {
-    display: flex;
-    justify-content: center;
-    gap: var(--s2);
-    flex-wrap: wrap;
-    margin: 3rem auto;
-}
-
-.conceptenPanel__image {
-    max-height: 10rem;
-}
-
-#concert-radio:checked~.panels #concert-panel,
-#feest-radio:checked~.panels #feest-panel,
-#ceremonieUitvaart-radio:checked~.panels #ceremonieUitvaart-panel,
-#ceremonieHuwelijk-radio:checked~.panels #ceremonieHuwelijk-panel {
-    display: block;
-}
-
-#concert-radio:checked~.tabsAndbarBelow .tabs #concert-tab,
-#feest-radio:checked~.tabsAndbarBelow .tabs #feest-tab,
-#ceremonieUitvaart-radio:checked~.tabsAndbarBelow .tabs #ceremonieUitvaart-tab,
-#ceremonieHuwelijk-radio:checked~.tabsAndbarBelow .tabs #ceremonieHuwelijk-tab {
-    color: black;
-    font-weight: bold;
-}
-
-#foto-radio:checked~.panels #foto-panel,
-#video-radio:checked~.panels #video-panel,
-#audio-radio:checked~.panels #audio-panel {
-    display: block;
-}
-
-#foto-radio:checked~.tabsAndbarBelow .tabs #foto-tab,
-#video-radio:checked~.tabsAndbarBelow .tabs #video-tab,
-#audio-radio:checked~.tabsAndbarBelow .tabs #audio-tab {
+.tab-selected {
     color: black;
     font-weight: bold;
 }

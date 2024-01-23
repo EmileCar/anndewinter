@@ -12,6 +12,7 @@ $allowedOrigins = [
  } else {
      $http_origin = "https://example.com";
  }
+header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET, POST, PUT');
 header("Access-Control-Allow-Headers: X-Requested-With");
 header('Access-Control-Allow-Credentials: true');

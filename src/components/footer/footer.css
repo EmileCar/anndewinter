@@ -2,6 +2,7 @@
 	background-color: var(--black-color);
 	padding: 1rem;
 	color: white;
+	align-self: end;
 }
 
 .footer__wrapper {
