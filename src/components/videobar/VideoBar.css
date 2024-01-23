@@ -8,3 +8,9 @@
     background-repeat: no-repeat;
     background-color: black;
 }
+
+@media screen and (max-width: 570px){
+    .iframe-index {
+        width: 100%;
+    }
+}

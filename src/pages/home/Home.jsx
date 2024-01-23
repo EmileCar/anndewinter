@@ -16,7 +16,7 @@ const Home = () => {
                 <p className='hero__subtitle'>Stijlvolle live zangeres</p>
             </Hero>
             <Quote />
-            <VideoBar url="https://www.youtube.com/embed/T5S422XwIv8"/>
+            <VideoBar url="https://www.youtube.com/embed/T5S422XwIv8" background={true}/>
             <AboutMe />
             <Concepten />
             <ImageSlider />

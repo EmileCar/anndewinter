@@ -1,0 +1,17 @@
+.annchante__container{
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.annchante__highlight{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.annchante__container p{
+    width: 100%;
+}
