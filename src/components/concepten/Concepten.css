@@ -7,6 +7,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    align-items: center;
     gap: 2rem;
 }
 
@@ -76,4 +77,29 @@
     background-position: 80% 60%;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 880px) {
+    .concept__container {
+        width: 18rem;
+        height: 10rem;
+    }
+
+    .concept__container--cover .concept-title {
+        font-size: 1.6rem;
+        padding: 0.3rem;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .concepten__section--wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        width: 80%;
+    }
+
+    .concept__container {
+        width: 100%;
+        height: 10rem;
+    }
 }

@@ -13,16 +13,14 @@
 }
 
 .hero__content{
-    position: absolute;
-    top: 50%;
-    right: -5%;
-    transform: translate(-50%, -50%);
     color: white;
     text-align: center;
+    justify-self: end;
+    margin: 2rem;
 }
 
 .hero__title{
-    font-size: 7rem;
+    font-size: calc(70vw/9);
     font-weight: 700;
     margin-bottom: 0.5rem;
     font-family:  Oswald;
@@ -30,46 +28,24 @@
 }
 
 .hero__subtitle{
-    font-size: 3.5rem;
+    font-size: calc(70vw/19);
     font-weight: 400;
     margin-bottom: 1rem;
     font-family: DancingScript;
     text-shadow: 0 0px 10px var(--black-color);
 }
 
-@media screen and (max-width: 1050px) {
-    .hero__image{
-        background-position: 70% 30%;
-        background-size: 120%;
+@media screen and (max-width: 500px) {
+    .hero__title {
+        font-size: 5rem;
     }
-    .hero__content {
-        right: -15%;
-        top: 45%;
-    }
-}
 
-@media screen and (max-width: 55rem) {
+    .hero__subtitle {
+        font-size: 2.1rem;
+    }
+
     .hero__image {
-        background-position: 80% 20%;
-        background-size: 150%;
-    }
-    .hero__content {
-        right: 40%;
-        top: 50%;
-        transform: translate(50%, -50%);
-    }
-}
-
-@media screen and (max-width: 585px) {
-    .hero__image {
-        background-position: 80% 20%;
-        background-size: cover;
-    }
-
-    .hero__content {
-        right: 50%;
-        top: 50%;
-        transform: translate(50%, -50%);
+        background-position: right;
     }
 }
 

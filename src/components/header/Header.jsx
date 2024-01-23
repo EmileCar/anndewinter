@@ -20,7 +20,7 @@ const Header = ({ title }) => {
   return (
     <header className="header elevation">
       <div className={`header__content ${isNavOpen ? 'preload open' : 'preload'}`}>
-        <Link to="/" className="header__logo--container layered-grid">
+        <Link to="/" className="header__logo--container">
           <img className="header__logo" src={logo} alt="Annchanté Logo" />
           <h1 className="header__title">Annchanté</h1>
         </Link>
