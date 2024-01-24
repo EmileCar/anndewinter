@@ -49,7 +49,7 @@ const Header = ({ title }) => {
             </li>
             <li className="menu__item">
               <Link className="item__link" to="/donna">
-                Donna²
+                D💋nna²
               </Link>
             </li>
             <li className="menu__item">

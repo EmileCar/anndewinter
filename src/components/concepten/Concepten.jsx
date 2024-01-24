@@ -5,7 +5,7 @@ const Concepten = () => {
     return (
         <section className="concepten__section  section-general">
             <h2 className="aboutme__section--title section__title">Waarvoor mij boeken?</h2>
-            <div class="section__title--border"></div>
+            <div className="section__title--border"></div>
             <div className="concepten__section--wrapper">
                 <div className='concept__container concept-concert elevation-strong'>
                     <div className='concept__container--cover'>

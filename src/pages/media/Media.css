@@ -30,6 +30,7 @@
 
 .foto__item {
     height: auto;
+    min-height: 5rem;
     break-inside: avoid-column;
     border-radius: 10px;
     overflow: hidden;
@@ -37,6 +38,7 @@
     position: relative;
     color: white;
     cursor: pointer;
+    background-color: lightgrey;
 }
 
 .foto__item img {

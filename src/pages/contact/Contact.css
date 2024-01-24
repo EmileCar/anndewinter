@@ -1,0 +1,99 @@
+
+.contact-wrapper{
+	margin: var(--s2) 0;
+	margin-bottom: var(--s1);
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	flex-wrap: wrap-reverse;
+	gap: var(--s3);
+}
+
+.contact-form{
+	display: grid;
+	grid-template-areas: 
+	"firstname lastname"
+	"email email"
+	"message message"
+	"submit submit";
+	gap: var(--s0);
+}
+
+label{
+	font-weight: bold;
+}
+
+.input{
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	padding: var(--s-1);
+	display: block;
+	width: 100%;
+	outline: var(--s-99) solid black;
+	border: var(--s-2) solid transparent;
+}
+
+.submit-button{
+	padding: var(--s0);
+	width: 8rem;
+	font-size: var(--s0);
+	text-transform: uppercase;
+	align-self: flex-end;
+	color: var(--color-gold);
+	outline: none;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.submit-button:hover{
+	text-decoration: underline;
+	color: #7a5b29;
+}
+
+.label-text{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.label-error{
+	color: var(--color-error);
+}
+
+.label-error .error{
+	opacity: 1;
+	pointer-events: initial;
+	visibility: visible;
+
+}
+
+.label-error .input{
+	border: var(--s-2) solid var(--color-error);
+	outline: none;
+}
+
+.error{
+	color: var(--color-error);
+	font-size: 0.8rem;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-style: italic;
+	opacity: 0;
+	pointer-events: none;
+	visibility: hidden;
+}
+
+.succes-hidden{
+	opacity: 0;
+	pointer-events: none;
+	visibility: hidden;
+}
+
+.form-bottom{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	grid-area: submit;
+}

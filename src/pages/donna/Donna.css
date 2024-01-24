@@ -1,0 +1,65 @@
+.donna__container{
+
+}
+
+.donna__description{
+	font-family: "DancingScript";
+	font-size: 2rem;
+	margin-top: var(--s1);
+    text-align: center;
+}
+
+.donna__sec{
+	padding-top: 4rem;
+}
+.donna__sec img{
+	max-width: 100%;
+	margin: 4rem auto;
+}
+.donna__wie--persons{
+	display: flex;
+	flex-direction: column;
+	gap: var(--s1);
+	margin-top: var(--s1);
+}
+.donna__wie--persons h3{
+	font-weight: bold;
+	font-size: 2rem;
+	display: inline-block;
+}
+.donna__wie--persons p{
+	display: inline;
+}
+.center{
+	text-align: center;
+	align-self: center;
+	max-width: 60%;
+	font-style: italic;
+}
+.donna__wat{
+	margin-top:1.5rem;text-align:center;max-width:80%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: var(--s1);
+}
+.donna__wat img{
+	max-width: 80%;
+}
+.donna__wat-prog{
+	font-weight: bold;
+}
+.donna__wat ul{
+	text-align: left;
+	list-style-type: circle;
+	display: flex;
+	flex-direction: column;
+	gap: var(--s0);
+}
+.donna__boekingsmogelijkheden{
+	margin-top: var(--s1);
+	font-size: 1.5rem;
+	text-align: center;
+	font-weight: bold;
+	max-width: 70%;
+}

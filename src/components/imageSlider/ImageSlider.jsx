@@ -21,7 +21,7 @@ const ImageSlider = () => {
             <h2 className="hidden">Afbeeldingen</h2>
             <div className="slide-images">
                 <img src={image1} className={"slide-image " + (activeImage === 0 ? "imageSlider-active" : "")} />
-                <img src={image2} className={"slide-image " + (activeImage === 1 ? "imageSlider-active" : "")} />
+                <img src={image2} className={"slide-image " + (activeImage === 1 ? "imageSlider-active" : "")}  style={{alignSelf: "start"}} />
                 <img src={image3} className={"slide-image " + (activeImage === 2 ? "imageSlider-active" : "")} />
                 <img src={image4} className={"slide-image " + (activeImage === 3 ? "imageSlider-active" : "")} />
             </div>

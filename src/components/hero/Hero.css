@@ -75,3 +75,7 @@
 .hero__section-small--img.annchante{
     background-image: url('../../assets/images/pages/annchante/annchante.jpg');
 }
+.hero__section-small--img.donna{
+    background-position: 60% center;
+    background-image: url('../../assets/images/pages/donna/donna-hero.jpg');
+}
