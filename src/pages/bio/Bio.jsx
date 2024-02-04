@@ -10,6 +10,10 @@ const Bio = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
+    useEffect(() => {
         fetchProductions();
     }, []);
 
@@ -32,7 +36,6 @@ const Bio = () => {
         } finally {
             setLoading(false);
         }
-        
     }
 
     return (

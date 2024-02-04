@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Annchante.css';
 import HeroBasic from '../../components/hero/HeroBasic';
 import VideoBar from '../../components/videobar/VideoBar';
 
 const Annchante = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div className='page'>
             <HeroBasic page="annchante"/>

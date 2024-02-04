@@ -10,6 +10,10 @@ const Media = () => {
     const [selectedMediaType, setSelectedMediaType] = useState(mediaTypes[0]);
     const [mediaItems, setMediaItems] = useState([]);
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     const renderMediaPanel = () => {
         if(selectedMediaType === "foto") {
             return <MediaPanelFoto/>

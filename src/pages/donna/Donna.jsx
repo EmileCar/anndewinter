@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './Donna.css';
 import HeroBasic from "../../components/hero/HeroBasic";
 import donnaImage from '../../assets/images/pages/donna/donna-verso-grijskopie.jpg';
 import trioImage from '../../assets/images/pages/donna/NAERT-DEWINTER-LEMAITRE--P131.jpg';
 
 const Donna = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
     return (
         <div className='page'>
             <HeroBasic page="donna"/>

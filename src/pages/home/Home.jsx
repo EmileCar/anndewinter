@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Home.css';
 import Hero from '../../components/hero/Hero';
 import Quote from '../../components/quote/Quote';
@@ -9,6 +9,10 @@ import ImageSlider from '../../components/imageSlider/ImageSlider';
 import Begeleiding from '../../components/begeleiding/Begeleiding';
 
 const Home = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div className='page'>
             <Hero>

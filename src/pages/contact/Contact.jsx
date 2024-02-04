@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './Contact.css';
 import contactImage from '../../assets/images/pages/contact/mama-beginfoto-website-bewerkt.jpg';
 
 const Contact = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    
     return (
         <div className='page'>
             <section className="section-general">
