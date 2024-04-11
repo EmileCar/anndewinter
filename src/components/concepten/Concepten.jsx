@@ -4,7 +4,7 @@ import './Concepten.css';
 const Concepten = () => {
     return (
         <section className="concepten__section  section-general">
-            <h2 className="aboutme__section--title section__title">Waarvoor mij boeken?</h2>
+            <h2 className="aboutme__section--title section__title">Waarvoor kan je me boeken?</h2>
             <div className="section__title--border"></div>
             <div className="concepten__section--wrapper">
                 <div className='concept__container concept-concert elevation-strong'>

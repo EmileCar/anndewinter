@@ -19,7 +19,7 @@ const Bio = () => {
 
     const fetchProductions = async () => {
         try{
-            const response = await fetch('https://www.anndewinter.be/API/?page=getPastActivities',
+            const response = await fetch('https://www.anndewinter.be/API/?page=past_activities',
                 {
                     method: 'GET',
                     headers: {
@@ -27,6 +27,9 @@ const Bio = () => {
                     },
                 }
             );
+            if(!response.ok){
+                throw new Error("!ok")
+            }
             const data = await response.json();
             setUniqueYears([...new Set(data.map((item) => item.year))]);
             setProductions(data);

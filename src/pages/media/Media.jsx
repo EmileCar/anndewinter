@@ -25,12 +25,7 @@ const Media = () => {
             return <div>Geen media gevonden</div>
         }
     }
-
-    useEffect(() => {
-        console.log(selectedMediaType)
-    } , [selectedMediaType]);
-
-
+    
     return (
         <div className='page'>
             <div className='section-general'>

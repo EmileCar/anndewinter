@@ -10,7 +10,7 @@ const MediaPanelAudio = () => {
 
     const fetchAudioItems = async () => {
         try{
-            const response = await fetch('https://www.anndewinter.be/API/?page=getAudio',
+            const response = await fetch('https://www.anndewinter.be/API/?page=get_audio',
                 {
                     method: 'GET',
                     headers: {

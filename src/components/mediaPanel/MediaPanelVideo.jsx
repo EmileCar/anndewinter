@@ -10,7 +10,7 @@ const MediaPanelVideo = () => {
 
     const fetchVideoItems = async () => {
         try{
-            const response = await fetch('https://www.anndewinter.be/API/?page=getVideos',
+            const response = await fetch('https://www.anndewinter.be/API/?page=get_video',
                 {
                     method: 'GET',
                     headers: {
